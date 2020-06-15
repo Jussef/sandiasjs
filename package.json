@@ -1,0 +1,45 @@
+{
+    "name": "sandiasjs",
+    "displayName": "sandiasjs",
+    "description": "Codigos que usamos para la chamba",
+    "version": "0.1.0",
+    "publisher":"sandiasjs910710",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JussefoDaniel/Administrador-citas-React"
+        },
+    "engines": {
+        "vscode": "^1.40.2"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "author": {
+        "name": "Daniel Jussef"
+      },
+      "icon": "images/icon.png",
+      "galleryBanner": {
+        "color": "#ff1515a3",
+        "theme": "dark"
+      },
+      "activationEvents": [
+          "onCommand:extension.saludo"],
+      "main": "./extension.js",
+      "scripts": {
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+      },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/sandias.code-snippets"
+            }
+        ],
+        "commands": [
+            {
+                "command": "extension.saludo",
+                "title": "Saludos"
+            }
+        ]
+    }
+}
