@@ -17,7 +17,7 @@
 	// }
 	"consoleAzul": {
 		"scope": "javascript,typescript",
-		"prefix": "perro",
+		"prefix": "loga",
 		"body": [
 			"console.log('%c $1', 'font-size: 100%; color: #00AEFF; font-weight: 700;');",
 		],
