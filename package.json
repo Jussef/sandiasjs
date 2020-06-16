@@ -27,7 +27,8 @@
     ],
     "main": "./extension.js",
     "scripts": {
-        "compile": "node ./node_modules/vsce/package -watch -p ./"
+        "paquete": "node ./node_modules/.bin/vsce package",
+        "publica": "node ./node_modules/.bin/vsce publish"
     },
     "contributes": {
         "snippets": [
