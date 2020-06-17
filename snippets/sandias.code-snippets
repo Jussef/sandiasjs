@@ -48,6 +48,24 @@
     ],
     "description": "🍉 Consola Morado"
   },
+  "todo": {
+    "scope": "javascript,typescript",
+    "prefix": "todo", //🔸
+    "body": [
+      "//TODO",
+      "$1"
+    ],
+    "description": "🍉 TODO hacer despues"
+  },
+  "fixme": {
+    "scope": "javascript,typescript",
+    "prefix": "fixme", //🔸
+    "body": [
+      "//FIXME",
+      "$1"
+    ],
+    "description": "🍉 FIXME resolver"
+  },
   "codetime": {
     "scope": "javascript,typescript",
     "prefix": "codetime", //🔸

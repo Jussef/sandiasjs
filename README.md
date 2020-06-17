@@ -42,6 +42,8 @@ Sandias:
 * 🍉`codeClick`: $('#boton$1').click(function()
 * 🍉`codeBotonImagen`: <img id='btn1'
 * 🍉`codeBotonTransparente`: <div id='btn1'
+* 🍉`todo`: TODO hacer despues
+* 🍉`fixme`: FIXME resolver
 
 ### 0.1.4
 
