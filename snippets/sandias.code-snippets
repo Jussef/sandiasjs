@@ -1,65 +1,174 @@
 {
+  // By Daniel Jussef
+  // GitHub: https://github.com/JussefoDaniel
   // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
   // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
   // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
   // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
   // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
   // Placeholders with the same ids are connected.
-  // Example:
-  // "Print to console": {
-  // 	"scope": "javascript,typescript",
-  // 	"prefix": "log",
-  // 	"body": [
-  // 		"console.log('$1');",
-  // 		"$2"
-  // 	],
-  // 	"description": "Log output to console"
-  // }
+
   "consoleAzul": {
     "scope": "javascript,typescript",
-    "prefix": "loga",
-    "body": ["console.log('%c $1', 'font-size: 100%; color: #00AEFF; font-weight: 700;');"],
-    "description": "Consola Azul"
+    "prefix": "loga", //🔸
+    "body": [
+      "console.log('%c $1', 'font-size: 100%; color: #00AEFF; font-weight: 700;');"
+    ],
+    "description": "🍉 Consola Azul"
   },
   "consoleVerde": {
     "scope": "javascript,typescript",
-    "prefix": "logver",
-    "body": ["console.log('%c $1', 'font-size: 100%; color: #00ff22; font-weight: 700;');"],
-    "description": "Consola Verde"
+    "prefix": "logver", //🔸
+    "body": [
+      "console.log('%c $1', 'font-size: 100%; color: #00ff22; font-weight: 700;');"
+    ],
+    "description": "🍉 Consola Verde"
   },
   "consoleRojo": {
     "scope": "javascript,typescript",
-    "prefix": "logro",
-    "body": ["console.log('%c $1', 'font-size: 100%; color: #ff001e; font-weight: 700;');"],
-    "description": "Consola Rojo"
+    "prefix": "logro", //🔸
+    "body": [
+      "console.log('%c $1', 'font-size: 100%; color: #ff001e; font-weight: 700;');"
+    ],
+    "description": "🍉 Consola Rojo"
   },
   "consoleAmarillo": {
     "scope": "javascript,typescript",
-    "prefix": "logama",
-    "body": ["console.log('%c $1', 'font-size: 100%; color: #fff200; font-weight: 700;');"],
-    "description": "Consola Amarillo"
+    "prefix": "logama", //🔸
+    "body": [
+      "console.log('%c $1', 'font-size: 100%; color: #fff200; font-weight: 700;');"
+    ],
+    "description": "🍉 Consola Amarillo"
   },
   "consoleMorado": {
     "scope": "javascript,typescript",
-    "prefix": "logmo",
-    "body": ["console.log('%c $1', 'font-size: 100%; color: #9900ff; font-weight: 700;');"],
-    "description": "Consola Morado"
+    "prefix": "logmo", //🔸
+    "body": [
+      "console.log('%c $1', 'font-size: 100%; color: #9900ff; font-weight: 700;');"
+    ],
+    "description": "🍉 Consola Morado"
   },
-  "tiempoSegundos": {
+  "codetime": {
     "scope": "javascript,typescript",
-    "prefix": "codetime",
-    "body": ["var a = 1;", "setInterval(() => {", "  a++;", "  console.log(a);", "  window.onclick = function(e) {", "    console.log('Tiempo - ', a);", "  };", "}, 1000);", "$1"],
-    "description": "Contador de segundos"
+    "prefix": "codetime", //🔸
+    "body": [
+      "var a = 1;",
+      "setInterval(() => {",
+      "  a++;",
+      "  console.log(a);",
+      "  window.onclick = function(e) {",
+      "    console.log('Tiempo - ', a);",
+      "  };",
+      "}, 1000);",
+      "$1"
+    ],
+    "description": "🍉 Contador de segundos"
   },
-  "stopAnimacion": {
+  "codestop": {
     "scope": "javascript,typescript",
-    "prefix": "codestop",
-    "body": ["var a = 1;", "function stop(elemento) {", "TweenMax.killTweensOf(elemento);", "TweenMax.to(elemento, {", "alpha: 1,", "ease: Quart.easeOut,", "});", "$(elemento).css('opacity', 1)", "}", "$1"],
-    "description": "Contador de segundos"
+    "prefix": "codestop", //🔸
+    "body": [
+      "var a = 1;",
+      "function stop(elemento) {",
+      "  TweenMax.killTweensOf(elemento);",
+      "  TweenMax.to(elemento, {",
+      "    alpha: 1,",
+      "    ease: Quart.easeOut,",
+      "  });",
+      "  $(elemento).css('opacity', 1)",
+      "}",
+      "$1"
+    ],
+    "description": "🍉 function stop(elemento)"
   },
-  "HTML-demo": {
-    "prefix": "html-solo",
-    "body": ["<html>", "\t<head>", "\t\t<title>Sample</title>", "\t</head>", "\t<body>", "\t$2", "\t</body>", "</html>"],
-    "description": "HTML ✌🏼"
+  "codeaudios": {
+    "scope": "javascript,typescript",
+    "prefix": "codeaudios", //🔸
+    "body": [
+      "Audios[$1].play();",
+      "Audios[$2].bind('ended', function (e) {",
+      "  $3",
+      "});"
+    ],
+    "description": "🍉 Audios[1].play();"
+  },
+  "parpadea": {
+    "scope": "javascript,typescript",
+    "prefix": "parapdea", //🔸
+    "body": ["parpadea($('#$1'), 0);"],
+    "description": "🍉 parpadea($('#btn');"
+  },
+  "animacionEntrada": {
+    "scope": "javascript,typescript",
+    "prefix": "animacionEntrada", //🔸
+    "body": ["animacion_entrada($('#imagen$1'), 'default', 0.5, 0);"],
+    "description": "🍉 animacion_entrada()"
+  },
+  "animacionSalida": {
+    "scope": "javascript,typescript",
+    "prefix": "animacionSalida", //🔸
+    "body": ["animacion_salida($('#imagen$1'), 'default', 0);"],
+    "description": "🍉 animacion_salida()"
+  },
+  "codeEnfrente": {
+    "scope": "javascript,typescript",
+    "prefix": "codeEnfrente", //🔸
+    "body": ["parent.enviarEnfrente();", "$1"],
+    "description": "🍉 enviarEnfrente"
+  },
+  "codeAtras": {
+    "scope": "javascript,typescript",
+    "prefix": "codeAtras", //🔸
+    "body": ["parent.enviarAtras();", "$1"],
+    "description": "🍉 enviarAtras"
+  },
+  "codeCualBoton": {
+    "scope": "javascript,typescript",
+    "prefix": "codeCualBoton", //🔸
+    "body": [
+      "///////////////// botón 1 ////////////////",
+      "var contador = 0;",
+      "for (let i = 0; i <= 10$1; i++) {",
+      "  $('#btn' + i).click(function () {",
+      "    contador++;",
+      "    var cualBoton = parseInt($(this).attr('id').substr(3, 1));",
+      "    animacion_entrada($('#pop' + cualBoton), 'arriba_abajo', 0.8, 0);",
+      "    watch();",
+      "  });",
+      "}",
+      "function watch() {",
+      "  if (contador === 10$2) {",
+      "    console.log('$3');",
+      "  }",
+      "}",
+      "$4"
+    ],
+    "description": "🍉 var cualBoton = parseInt($(this)"
+  },
+  "codeClick": {
+    "scope": "javascript,typescript",
+    "prefix": "codeClick", //🔸
+    "body": [
+      "$('#boton$1').click(function() {",
+      "  $2",
+      "});",
+    ],
+    "description": "🍉 $('#boton$1').click(function()"
+  },
+  "codeBotonImagen": {
+    "scope": "javascript,typescript",
+    "prefix": "codeBotonImagen", //🔸
+    "body": [
+      "<img id='btn$1' class='element btn btn_green' _origeny='200$2' _origenx='200$3' src='images/pantalla1$4/boton0$4.png' />",
+    ],
+    "description": "🍉 <img id='btn1'"
+  },
+  "codeBotonTransparente": {
+    "scope": "javascript,typescript",
+    "prefix": "codeBotonTransparente", //🔸
+    "body": [
+      "<div id='btn$1' class='element btn btn_green' _origeny='200$2' _origenx='200$3' style='width: 100$4px; height: 100$5px;' />",
+    ],
+    "description": "🍉 <div id='btn1'"
   }
 }
