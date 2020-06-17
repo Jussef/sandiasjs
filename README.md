@@ -24,8 +24,24 @@ Por ejemplo:
 
 `console.log("console.log('%c $1', 'font-size: 100%; color: #00AEFF; font-weight: 700;');")`
 
-* `codetime`: setInterval(() => {
-* `codestop`: TweenMax.killTweensOf(elemento);
+Sandias:
+* 🍉`consoleAzul`: Consola Azul
+* 🍉`consoleVerde`: Consola Verde
+* 🍉`consoleRojo`: Consola Rojo
+* 🍉`consoleAmarillo`: Consola Amarillo
+* 🍉`consoleMorado`: Consola Morado
+* 🍉`codetime`: Contador de segundos
+* 🍉`codestop`: function stop(elemento)
+* 🍉`codeaudios`: Audios[1].play();
+* 🍉`parpadea`: parpadea($('#btn');
+* 🍉`animacionEntrada`: animacion_entrada()
+* 🍉`animacionSalida`: animacion_salida()
+* 🍉`codeEnfrente`: enviarEnfrente
+* 🍉`codeAtras`: enviarAtras
+* 🍉`codeCualBoton`: var cualBoton = parseInt($(this)
+* 🍉`codeClick`: $('#boton$1').click(function()
+* 🍉`codeBotonImagen`: <img id='btn1'
+* 🍉`codeBotonTransparente`: <div id='btn1'
 
 ### 0.1.4
 
