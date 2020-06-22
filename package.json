@@ -6,7 +6,7 @@
     "publisher": "sandiasjs910710",
     "repository": {
         "type": "git",
-        "url": "https://github.com/JussefoDaniel/Administrador-citas-React"
+        "url": "https://github.com/JussefoDaniel/sandiasjs"
     },
     "engines": {
         "vscode": "^1.40.2"

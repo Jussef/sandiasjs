@@ -185,7 +185,7 @@
     "scope": "javascript,typescript",
     "prefix": "codeBotonTransparente", //🔸
     "body": [
-      "<div id='btn$1' class='element btn btn_green' _origeny='200$2' _origenx='200$3' style='width: 100$4px; height: 100$5px;' />",
+      "<div id='btn$1' class='element btn btn_green' _origeny='200$2' _origenx='200$3' style='width: 100$4px; height: 100$5px;'></div>",
     ],
     "description": "🍉 <div id='btn1'"
   }
