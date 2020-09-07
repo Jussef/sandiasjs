@@ -84,20 +84,9 @@
   },
   "codestop": {
     "scope": "javascript,typescript",
-    "prefix": "codestop", //🔸
-    "body": [
-      "var a = 1;",
-      "function stop(elemento) {",
-      "  TweenMax.killTweensOf(elemento);",
-      "  TweenMax.to(elemento, {",
-      "    alpha: 1,",
-      "    ease: Quart.easeOut,",
-      "  });",
-      "  $(elemento).css('opacity', 1)",
-      "}",
-      "$1"
-    ],
-    "description": "🍉 function stop(elemento)"
+    "prefix": "stop", //🔸
+    "body": ["stop($('#$1'), 0);"],
+    "description": "🍉 stop($('#btn');"
   },
   "codeaudios": {
     "scope": "javascript,typescript",
