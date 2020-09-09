@@ -11,75 +11,49 @@
   "consoleAzul": {
     "scope": "javascript,typescript",
     "prefix": "loga", //🔸
-    "body": [
-      "console.log('%c $1', 'font-size: 100%; color: #00AEFF; font-weight: 700;');"
-    ],
+    "body": ["console.log('%c $1', 'font-size: 100%; color: #00AEFF; font-weight: 700;');"],
     "description": "🍉 Consola Azul"
   },
   "consoleVerde": {
     "scope": "javascript,typescript",
     "prefix": "logver", //🔸
-    "body": [
-      "console.log('%c $1', 'font-size: 100%; color: #00ff22; font-weight: 700;');"
-    ],
+    "body": ["console.log('%c $1', 'font-size: 100%; color: #00ff22; font-weight: 700;');"],
     "description": "🍉 Consola Verde"
   },
   "consoleRojo": {
     "scope": "javascript,typescript",
     "prefix": "logro", //🔸
-    "body": [
-      "console.log('%c $1', 'font-size: 100%; color: #ff001e; font-weight: 700;');"
-    ],
+    "body": ["console.log('%c $1', 'font-size: 100%; color: #ff001e; font-weight: 700;');"],
     "description": "🍉 Consola Rojo"
   },
   "consoleAmarillo": {
     "scope": "javascript,typescript",
     "prefix": "logama", //🔸
-    "body": [
-      "console.log('%c $1', 'font-size: 100%; color: #fff200; font-weight: 700;');"
-    ],
+    "body": ["console.log('%c $1', 'font-size: 100%; color: #fff200; font-weight: 700;');"],
     "description": "🍉 Consola Amarillo"
   },
   "consoleMorado": {
     "scope": "javascript,typescript",
     "prefix": "logmo", //🔸
-    "body": [
-      "console.log('%c $1', 'font-size: 100%; color: #9900ff; font-weight: 700;');"
-    ],
+    "body": ["console.log('%c $1', 'font-size: 100%; color: #9900ff; font-weight: 700;');"],
     "description": "🍉 Consola Morado"
   },
   "todo": {
     "scope": "javascript,typescript",
     "prefix": "todo", //🔸
-    "body": [
-      "//TODO",
-      "$1"
-    ],
+    "body": ["//TODO", "$1"],
     "description": "🍉 TODO hacer despues"
   },
   "fixme": {
     "scope": "javascript,typescript",
     "prefix": "fixme", //🔸
-    "body": [
-      "//FIXME",
-      "$1"
-    ],
+    "body": ["//FIXME", "$1"],
     "description": "🍉 FIXME resolver"
   },
   "codetime": {
     "scope": "javascript,typescript",
     "prefix": "codetime", //🔸
-    "body": [
-      "var a = 1;",
-      "setInterval(() => {",
-      "  a++;",
-      "  console.log(a);",
-      "  window.onclick = function(e) {",
-      "    console.log('Tiempo - ', a);",
-      "  };",
-      "}, 1000);",
-      "$1"
-    ],
+    "body": ["var a = 1;", "setInterval(() => {", "  a++;", "  console.log(a);", "  window.onclick = function(e) {", "    console.log('Tiempo - ', a);", "  };", "}, 1000);", "$1"],
     "description": "🍉 Contador de segundos"
   },
   "codestop": {
@@ -91,12 +65,7 @@
   "codeaudios": {
     "scope": "javascript,typescript",
     "prefix": "codeaudios", //🔸
-    "body": [
-      "Audios[$1].play();",
-      "Audios[$2].bind('ended', function (e) {",
-      "  $3",
-      "});"
-    ],
+    "body": ["Audios[$1].play();", "Audios[$2].bind('ended', function (e) {", "  $3", "});"],
     "description": "🍉 Audios[1].play();"
   },
   "parpadea": {
@@ -133,49 +102,89 @@
     "scope": "javascript,typescript",
     "prefix": "codeCualBoton", //🔸
     "body": [
-      "///////////////// botón 1 ////////////////",
+      "///////////////// 🎯 Actividad 🎯 ////////////////",
       "var contador = 0;",
-      "for (let i = 0; i <= 10$1; i++) {",
+      "var noObjetos = 10;",
+      "for (let i = 0; i <= noObjetos; i++) {",
       "  $('#btn' + i).click(function () {",
       "    contador++;",
-      "    var cualBoton = parseInt($(this).attr('id').substr(3, 1));",
-      "    animacion_entrada($('#pop' + cualBoton), 'arriba_abajo', 0.8, 0);",
+      "    var cualBoton = parseInt($(this).attr('id').substr(3, 2));",
       "    watch();",
       "  });",
       "}",
       "function watch() {",
-      "  if (contador === 10$2) {",
-      "    console.log('$3');",
+      "  if (contador === noObjetos) {",
+      "    console.log('Somos ' + noObjetos);",
       "  }",
       "}",
-      "$4"
+      "$1"
     ],
     "description": "🍉 var cualBoton = parseInt($(this)"
+  },
+  "codeFuncionSplice": {
+    "scope": "javascript,typescript",
+    "prefix": "codefuncionsplice", //🔸
+    "body": [
+      "///////////////// 🎯 Actividad 🎯 ////////////////",
+      "var contador = 0;",
+      "var noObjetos = 5;",
+      "var correctas = [null, 1, 0, 1, 0, 1];",
+      "var respuestas = [null, 0, 0, 0, 0, 0];",
+      "for (let i = 0; i <= noObjetos; i++) {",
+      "$('#btn' + i).click(function () {",
+      "contador++;",
+      "var cualBoton = parseInt($(this).attr('id').substr(3, 2));",
+      "respuestas.splice(1, 2, 3);",
+      "// 1.- Lugar del arreglo",
+      "// 2.- Cuantos vamos a sustituir",
+      "// 3.- Que valor se agrega",
+      "watch();",
+      "});",
+      "}",
+      "function watch() {",
+      "var A = correctas.toString();",
+      "var B = respuestas.toString();",
+      "if (contador === noObjetos) {",
+      "console.log('Somos' + contador);",
+      "if (A === B) {",
+      "console.log('Bien');",
+      "} else {",
+      "console.log('Mal');",
+      "}",
+      "}",
+      "}",
+      "$1"
+    ],
+    "description": "🍉 respuestas.splice(1, 2, 3);"
+  },
+  "codeSplice": {
+    "scope": "javascript,typescript",
+    "prefix": "codeSplice", //🔸
+    "body": ["respuestas.splice(1, 2, 3);", "// 1.- Lugar del arreglo", "// 2.- Cuantos vamos a sustituir", "// 3.- Que valor se agrega"],
+    "description": "🍉 $('#boton$1').click(function()"
   },
   "codeClick": {
     "scope": "javascript,typescript",
     "prefix": "codeClick", //🔸
-    "body": [
-      "$('#boton$1').click(function() {",
-      "  $2",
-      "});",
-    ],
+    "body": ["$('#boton$1').click(function() {", "  $2", "});"],
     "description": "🍉 $('#boton$1').click(function()"
   },
   "codeBotonImagen": {
     "scope": "javascript,typescript",
     "prefix": "codeBotonImagen", //🔸
-    "body": [
-      "<img id='btn$1' class='element btn btn_green' _origeny='200$2' _origenx='200$3' src='images/pantalla1$4/boton0$4.png' />",
-    ],
+    "body": ["<img id='btn$1' class='element btn btn_green' _origeny='200$2' _origenx='200$3' src='images/pantalla1$4/boton0$4.png' />"],
     "description": "🍉 <img id='btn1'"
   },
   "codeBotonTransparente": {
     "scope": "javascript,typescript",
     "prefix": "codeBotonTransparente", //🔸
-    "body": [
-      "<div id='btn$1' class='element btn btn_green' _origeny='200$2' _origenx='200$3' style='width: 100$4px; height: 100$5px;'></div>",
-    ],
+    "body": ["<div id='btn$1' class='element btn btn_green' _origeny='200$2' _origenx='200$3' style='width: 100$4px; height: 100$5px;'></div>"],
     "description": "🍉 <div id='btn1'"
+  },
+  "codeBotonTransparente2": {
+    "scope": "html",
+    "prefix": "codeBotonDiv",
+    "body": ["<div id='btn$1' class='element btn rosa' _origeny='300$2' _origenx='500$3' style='width: 100px; height: 50px;'></div>"],
+    "description": "🍉"
   }
 }
