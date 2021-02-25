@@ -2,7 +2,7 @@
     "name": "sandiasjs",
     "displayName": "sandiasjs",
     "description": "Codigos que usamos para la chamba",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "publisher": "sandiasjs910710",
     "repository": {
         "type": "git",
@@ -27,6 +27,9 @@
     ],
     "main": "./extension.js",
     "scripts": {
+        "loginF": "node ./node_modules/.bin/vsce login sandiasjs910710",
+        "logoutF": "node ./node_modules/.bin/vsce logout",
+        "helpF": "node ./node_modules/.bin/vsce --help",
         "paquete": "node ./node_modules/.bin/vsce package",
         "publica": "node ./node_modules/.bin/vsce publish"
     },
@@ -45,6 +48,6 @@
         ]
     },
     "dependencies": {
-        "vsce": "^1.77.0"
+        "vsce": "^1.85.0"
     }
 }

@@ -200,6 +200,7 @@
       "terminarPantalla();",
       "localStorage.clear();",
       "parent.complete();",
+      "parent.save();",
       "parent.end();"
     ],
     "description": "🍉 complete() + Fin()"
