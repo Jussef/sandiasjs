@@ -207,7 +207,13 @@
   "codeClick": {
     "scope": "javascript,typescript",
     "prefix": "codeClick", //🔸
-    "body": ["$('#boton$1').click(function() {", "  $2", "});"],
+    "body": [
+      "$('#boton$1').click(function() {",
+      "stop($(this), 0);",
+      "animacion_salida($(this), 'default', 0);",
+      "  $2",
+      "});"
+    ],
     "description": "🍉 $('#boton$1').click(function()"
   },
   "codeBotonImagen": {
