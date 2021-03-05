@@ -217,6 +217,19 @@
     ],
     "description": "🍉 $('#boton$1').click(function()"
   },
+  "codeTerminarPantalla": {
+    "scope": "javascript,typescript",
+    "prefix": "codeTerminarPantalla", //🔸
+    "body": [
+      "function terminarPantalla(time) {",
+        "setTimeout(function () {",
+          "parent.alert_next();",
+          "console.log('Termina Pantalla 🏄🏻‍♂️');",
+        "}, time * 1000);",
+      "}"
+    ],
+    "description": "🍉 functionTerminarPantalla time"
+  },
   "codeBotonImagen": {
     "scope": "javascript,typescript",
     "prefix": "codeBotonImagen", //🔸
