@@ -65,7 +65,7 @@
     "prefix": "codetime", //🔸
     "body": [
       "var a = 1;",
-      "setInterval(() => {",
+      "setInterval(function() {",
       "  a++;",
       "  console.log(a);",
       "  window.onclick = function(e) {",
@@ -86,7 +86,9 @@
     "scope": "javascript,typescript",
     "prefix": "codeaudios", //🔸
     "body": [
+      "setTimeout(function() {",
       "Audios[$1].play();",
+      "}, 1000);",
       "Audios[$2].bind('ended', function (e) {",
       "  $3",
       "});"
