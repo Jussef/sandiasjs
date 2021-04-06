@@ -232,6 +232,25 @@
     ],
     "description": "🍉 functionTerminarPantalla time"
   },
+  
+  "codeCoordenadaClick": {
+    "scope": "javascript,typescript",
+    "prefix": "codeCoordenadaClick", //🔸
+    "body": [
+      "// Mouse Coordenadas",
+      "const mainContainer = document.querySelector('#contenido');",
+      "function runEvent(e) {",
+        "e.preventDefault();",
+        "}",
+        "$('#contenido').click(function (e) {",
+          "console.log('%c Coordenadas", "font-size: 100%; color: #00AEFF; font-weight: 700;');",
+          "console.log('_origeny=' + `'` + parseInt(e.offsetY) + `'`, '_origenx=' + `'` + parseInt(e.offsetX) + `'`);",
+          "});",
+    ],
+    "description": "🍉 ver coordenadas click"
+  },
+  
+  
   "codeBotonImagen": {
     "scope": "javascript,typescript",
     "prefix": "codeBotonImagen", //🔸
