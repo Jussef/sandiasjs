@@ -45,6 +45,6 @@ Sandias:
 * 🍉`todo`: TODO hacer despues
 * 🍉`fixme`: FIXME resolver
 
-### 0.1.5
+### 0.3.4
 
 Feliz codigo! ✌🏼
