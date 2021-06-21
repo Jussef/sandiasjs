@@ -44,9 +44,17 @@
     "scope": "javascript,typescript",
     "prefix": "logmo", //🔸
     "body": [
-      "console.log('%c $1', 'font-size: 100%; color: #9900ff; font-weight: 700;');"
+      "console.log('%c $1', 'font-size: 100%; color: #bc57ff; font-weight: 700;');"
     ],
     "description": "🍉 Consola Morado"
+  },
+  "consoleCoral": {
+    "scope": "javascript,typescript",
+    "prefix": "logcoral", //🔸
+    "body": [
+      "console.log('%c $1', 'font-size: 100%; color: #ff7e29; font-weight: 700;');"
+    ],
+    "description": "🍉 Consola Coral"
   },
   "todo": {
     "scope": "javascript,typescript",
@@ -97,7 +105,7 @@
   },
   "parpadea": {
     "scope": "javascript,typescript",
-    "prefix": "parapdea", //🔸
+    "prefix": "parpadea", //🔸
     "body": ["parpadea($('#$1'), 0);"],
     "description": "🍉 parpadea($('#btn');"
   },
